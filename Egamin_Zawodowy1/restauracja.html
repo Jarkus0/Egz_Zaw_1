@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restauracja Wszystkie Smaki</title>
+    <link rel="stylesheet" href="styl_1.css?v=111">
+</head>
+<body>
+    <div class="header">
+        <h1>Witamy w restauracji „Wszystkie Smaki”</h1>
+    </div>
+
+    <div>
+
+    <div class="panel_gorny">
+        <div class="lewy">
+            <img src="menu.jpg" alt="Nasze danie">
+        </div>
+    
+        <div class="prawy">
+            <h4>U nas dobrze zjesz!</h4>
+            <ol>
+                <li>Obiady od 40 zł</li>
+                <li>Przekąski od 10 zł</li>
+                <li>Kolacje od 20 zł</li>
+            </ol>
+    
+        </div>
+    </div>
+
+    
+    
+    <div class="panel_dolny">
+        <h2>Zarezerwuj stolik on-line</h2>
+        <form action="rezerwacja.php" method="POST">
+            <div class="form-group">
+                <label>Data (format rrrr-mm-dd):</label>
+                <input type="text" name="date" class="form-control">
+             </div>
+             <div class="form-group">
+                <label>Ile osób?:</label>
+                <input type="number" name="persons" class="form-control">
+             </div>
+             <div class="form-group">
+                 <label>Twój numer telefonu:</label>
+                 <input type="text" name="phone" class="form-control">
+             </div>
+             <div class="box">
+                <input type="checkbox">
+                <p>Zgadzam się na przetwarzanie danych osobowych</p>
+            </div>
+            <div class="btns">
+                <button type="reset" name="clear">WYCZYŚĆ</button>
+                <button type="submit" name="submit" value="Submit">REZERWUJ</button>
+            </div>
+        </form>        
+    </div>
+
+    </div>
+
+    <div class="footer">
+        <p>Stronę internetową opracował: <em>03320606017</em></p>
+
+    </div>
+</body>
+</html>
